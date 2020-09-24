@@ -1,0 +1,29 @@
+To run the app:
+--------------
+> nodemon server.js
+
+OR 
+
+> node server.js
+
+Export Entire DB:
+-----------------
+mongodump -d <database_name> -o <directory_backup>
+mongodump -d todos -o dbdump
+
+Import Entire DB:
+-----------------
+mongorestore -d <database_name> <directory_backup>
+dbdump>  mongorestore -d todos todos 
+
+Using nodemon in debugging:
+https://github.com/Microsoft/vscode-recipes/tree/master/nodemon
+
+Heroku app
+-----------
+https://todos-api-dev.herokuapp.com/
+https://todos-api-qa.herokuapp.com/
+https://todos-api-production.herokuapp.com/
+dbdump> mongorestore -h ds137827.mlab.com:37827 -d heroku_v4zkhqpl -u nagarjuna -p password todos
+
+

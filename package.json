@@ -1,0 +1,22 @@
+{
+  "name": "todos-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "debug": "nodemon --inspect server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-delay": "^0.2.0",
+    "mongoose": "^5.3.6",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "swagger-ui-express": "^4.1.1"
+  }
+}
