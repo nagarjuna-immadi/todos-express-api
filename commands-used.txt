@@ -27,3 +27,17 @@ https://todos-api-production.herokuapp.com/
 dbdump> mongorestore -h ds137827.mlab.com:37827 -d heroku_v4zkhqpl -u nagarjuna -p password todos
 
 
+On Mac
+------
+Start Mongo DB Server
+    > brew services start mongodb-community@6.0
+
+Use Studio 3T to connect to DB
+    - Connection string: mongodb://localhost:27017/todos
+
+
+Swagger url
+-----------
+    - http://localhost:3000/api-docs/
+
+
