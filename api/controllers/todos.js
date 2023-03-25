@@ -51,7 +51,7 @@ exports.save = function(req, res, next) {
             "error": "Please select at least one tag"
         });
     }
-    payload._id = mongoose.Types.ObjectId();
+    payload._id = new mongoose.Types.ObjectId();
     Todos.insertMany([payload])
         .then(function(result){
             res.status(200).json(result);
@@ -71,7 +71,7 @@ exports.update = function(req, res, next) {
         });
     }
 
-    Todos.update({ _id: id }, { $set: payload })
+    Todos.updateOne({ _id: id }, { $set: payload })
         .then(function(result){
             res.status(200).json(result);
         })
